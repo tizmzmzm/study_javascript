@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>argument</title>
+</head>
+<body>
+    <script>
+        function func(a,b,c){
+            console.log(arguments[0])
+            // func() 인자를 배열형태로 받아올 수 있는 arguments 내부 함수
+            // arguments 객체의 index는 0부터 시작한다
+            // arguments[0] == 1
+            console.log(arguments[1])
+            // arguments[1] == 2
+            console.log(arguments[2])
+            // arguments[2] == 3
+        }
+        func(1,2,3);
+    </script>
+</body>
+</html>
